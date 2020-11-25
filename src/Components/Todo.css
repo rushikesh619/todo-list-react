@@ -6,20 +6,18 @@ input[type=submit] {
 
 .totalTasks-container{
     justify-content: right;
-}
-
-.reset{
-    bottom: 0rem;
+    padding-top: 1rem;
 }
 
 .add-activity-container{
     position: fixed;
     bottom: 0rem;
     width: 100%;
+    padding: 1rem;
 }
 .reset{
-    margin-bottom: 4%;
+    float: right;
 }
 .add-activity{
-    text-align: center;
+    float: left;
 }

@@ -50,17 +50,16 @@ class Todo extends Component {
         return (
             <div>
 
-                < div className="container" >
-                    <nav className="navbar navbar-expand-lg  navbar-light bg-light">
-                        <div className="totalTasks-container">
-                            <a className="navbar-brand" href="#" font->Total tasks <span className="badge badge-dark m-2   "> {this.state.Todo.length} </span> </a>
-                        </div>
-                    </nav>
-                </div >
+                <nav className="navbar navbar-expand-lg  navbar-light bg-light">
+                    <div className="totalTasks-container">
+                        <a className="navbar-brand" href="#" font->To-Do App</a>
+                        <span className="float-right">
+                            Total tasks <span className="badge badge-dark m-2   "> {this.state.Todo.length} </span>
+                        </span>
+                    </div>
+                </nav>
                 <div>
-                    <button onClick={this.resetList} type="button" className=" reset btn btn-primary m-4 float-right " >Reset</button>
                 </div>
-                <h1 className="font-weight-bold">ToDo List</h1>
 
                 <ul>{this.renderTodoItem()}</ul>
                 <div className="add-activity-container">
@@ -69,6 +68,8 @@ class Todo extends Component {
                         <input type="text" placeholder="Activity" id="activity" name="type here" ref="doTask" />
                         <button onClick={this.addActivity} type="button" className="btn btn-secondary m-2">Submit</button>
                     </div>
+                    <button onClick={this.resetList} type="button" className="reset btn btn-primary " >Reset</button>
+
                 </div>
 
             </div >
