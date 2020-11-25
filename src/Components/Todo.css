@@ -1,0 +1,25 @@
+
+input[type=submit] { 
+    position: relative; 
+    float: right; 
+} 
+
+.totalTasks-container{
+    justify-content: right;
+}
+
+.reset{
+    bottom: 0rem;
+}
+
+.add-activity-container{
+    position: fixed;
+    bottom: 0rem;
+    width: 100%;
+}
+.reset{
+    margin-bottom: 4%;
+}
+.add-activity{
+    text-align: center;
+}
